@@ -1,0 +1,14 @@
+Um semáfaro é uma estrutura de dados que, assim como os semáfaros de trânsito
+controlam o fluxo de automóveis, controlam o acesso das aplicações aos recursos.
+
+No geral, para usar um semáfaro, o thread que quer acessar o recurso precisa pedir
+para acessar. Esse pedido é feito pelo metodo acquire() do Semaphore que temos na api do JAVA
+
+    - Se a contagem do semáfaro for maior do que 0, o thread consegue a permissão que faz
+    com que a contagem seja decrementada
+    - Por outro lado, o thread vai ser bloqueado até conseguir permissão
+    - Quando o thread finaliza seu trabalho ele libera o acesso para outros threads pelo
+    método release()
+    - Se existir outro thread esperando ele ganhar permissão logo após o release.
+
+O Java contém uma classe Semaphore em java.util.concurrent
