@@ -60,7 +60,7 @@ class ProcessadorThread extends Thread{
 
 public class readWriteSemafaro {
     public static void main(String[]args) throws InterruptedException {
-        //criando um objeto semáfaro, com somente 1 permit(quantidade de thread que pode usar o recurso ao mesmo tempo)
+        //criando um objeto semáfaro, com somente 1 permit(quantidade de threads que podem usar o recurso ao mesmo tempo)
         Semaphore semaphore = new Semaphore(1);
 
         //criando nossos threads
